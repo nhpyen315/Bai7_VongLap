@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="demo" onclick="play()"> Chơi </button>
+    <script>
+        function play(){
+        let num = prompt('Nhập số lớn nhắt của khoảng số bạn chọn: ')
+        let so= parseInt(Math.random()*(num - 0));
+
+        let i=0;
+        while (i<=3) {
+            let doanso= prompt('Nhập số bạn đoán: ');
+            if (doanso==so) 
+            {alert ('Xin chúc mừng!') 
+            break;}else{
+                alert('Sai, hãy nhập lại!');
+                   i++;}
+         
+        }
+    }
+    </script>
+    
+</html>
